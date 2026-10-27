@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Découvre Bitcoin · nouvelle vitrine bientôt</title>
+<meta name="description" content="Découvre Bitcoin prépare son nouveau site. En attendant, retrouve nos vidéos sur YouTube et nos formations sur Plan ₿ Academy.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/favicon-192.png">
+<style>
+@font-face{font-family:"Archivo";src:url(fonts/Archivo-latin.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+20BF,U+2122,U+2191,U+2193,U+2212}
+@font-face{font-family:"Archivo";src:url(fonts/Archivo-latin-ext.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1EFF,U+20A0-20AB,U+20AD-20C0}
+@font-face{font-family:"JetBrains Mono";src:url(fonts/JetBrainsMono-latin.woff2) format("woff2");font-weight:400 700;font-display:swap}
+:root{--creme:#f6efe2;--encre:#16120d;--gris:#6f655a;--trait:#d9ccb6;--orange:#f7931a;--orange-texte:#b85a00;
+  --display:"Archivo",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;--g:clamp(16px,5vw,72px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:hidden}
+body{background:var(--creme);color:var(--encre);font:400 17px/1.6 var(--display);min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;overflow-x:hidden}
+::selection{background:var(--orange)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+header,main{width:100%;max-width:1100px;margin:0 auto;padding:0 var(--g)}
+header{padding-top:28px;display:flex;align-items:center;gap:12px;font:850 15px/1 var(--display);font-stretch:62%;text-transform:uppercase;letter-spacing:.02em}
+header img{width:46px;height:45px}
+main{flex:1;display:flex;overflow:hidden;flex-direction:column;justify-content:center;padding-top:48px;padding-bottom:48px;position:relative}
+.tag{display:inline-flex;align-items:center;gap:10px;font:500 12px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--orange-texte)}
+.tag::before{content:"";width:9px;height:9px;background:var(--orange);animation:clignote 1.6s steps(2) infinite}
+@keyframes clignote{50%{opacity:0}}
+h1{margin:22px 0 24px;font:850 clamp(44px,9vw,120px)/.9 var(--display);font-stretch:62%;text-transform:uppercase;letter-spacing:-.005em}
+h1 span{color:var(--orange)}
+.lead{font-size:clamp(17px,1.6vw,20px);line-height:1.5;max-width:32em}
+.liens{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.btn{display:inline-flex;align-items:center;gap:14px;padding:18px 26px;background:var(--orange);color:var(--encre);text-decoration:none;
+  font:800 15px/1 var(--display);font-stretch:85%;text-transform:uppercase;letter-spacing:.06em;transition:transform .18s}
+.btn.ligne{background:none;box-shadow:inset 0 0 0 2px var(--encre)}
+.btn:hover{transform:translateY(-2px)}
+.cercle{position:absolute;right:0;top:50%;width:min(46vw,520px);transform:translateY(-50%);z-index:-1;opacity:.9;animation:tourne 60s linear infinite}
+@keyframes tourne{to{transform:translateY(-50%) rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:640px){.cercle{width:80vw;right:-20vw;opacity:.45}}
+</style>
+</head>
+<body>
+<header><img src="img/lapin.png" alt="" width="46" height="45"><span>Découvre<br>Bitcoin</span></header>
+<main>
+  <svg class="cercle" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="none" stroke="#f7931a" stroke-width="1.2" stroke-dasharray="3 9"/><circle cx="100" cy="100" r="72" fill="none" stroke="#f7931a" stroke-width=".6"/><circle cx="100" cy="100" r="40" fill="none" stroke="#f7931a" stroke-width=".4" stroke-dasharray="1 5"/></svg>
+  <p class="tag">Site en construction</p>
+  <h1>Nouvelle vitrine,<br><span>bientôt.</span></h1>
+  <p class="lead">On reconstruit Découvre Bitcoin de zéro : plus simple, plus clair, pour faire tes premiers pas dans Bitcoin. En attendant, retrouve nos vidéos sur YouTube et nos formations gratuites sur Plan ₿ Academy.</p>
+  <div class="liens">
+    <a class="btn" href="https://www.youtube.com/@decouvrebitcoin" rel="noopener">Les vidéos YouTube ↗</a>
+    <a class="btn ligne" href="https://planb.academy/fr" rel="noopener">Les formations Plan ₿ Academy ↗</a>
+  </div>
+</main>
+</body>
+</html>
